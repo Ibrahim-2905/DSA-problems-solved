@@ -6,6 +6,7 @@ int main(){
     cout << "Enter a number" << endl;
     cin >> n;
     int arr[n];
+    cout << "Enter an array" << endl;
     for(int i = 0; i < n; i++){
         cin >> arr[i];
     }
@@ -17,12 +18,13 @@ int main(){
     }
 
     int q;
+    cout << "Enter how many times do want to check about numbers appearences." << endl;
     cin >> q;
     while(q--){
         int number;
+       cout << "Enter the number that you want to check" << endl;
         cin >> number; 
-
-        cout << hash[number] << endl;
+        cout << number  << " is appearing " << hash[number] << " times " << endl;
     }
 
     return 0;
